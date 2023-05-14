@@ -1,4 +1,4 @@
-//This is my project called Prompto built with Next.js and TypeScript
+//This is my project called Prompto built with Next.js
 //Next.js is a framework build on React to create Web applications
 //You can build user interfaces using React components
 // Author: Jonathan Phan
@@ -18,6 +18,7 @@ npx create-next-app@latest ./
 	- postcss
 	- autoprefixer
 
+***JSON Practice***
 //Sample JSON practice
 {
 	'Title': "Prompto",
@@ -39,4 +40,10 @@ create layout.jsx and page.jsx
 
 .jsx is Javascript XML which makes it easier to add HTML to react
 
-//Inside tailwin.config.js add paths to the files that will use Tailwind CSS class names
+//Inside tailwind.config.js add paths to the files that will use Tailwind CSS class names
+
+//layout.jsx has metadata and contains RootLayout HTML
+
+// page.jsx is what will Render our Home page
+
+** Run npm run dev to test web application**
