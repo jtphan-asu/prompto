@@ -42,8 +42,39 @@ create layout.jsx and page.jsx
 
 //Inside tailwind.config.js add paths to the files that will use Tailwind CSS class names
 
-//layout.jsx has metadata and contains RootLayout HTML
+***layout.jsx***
+This file is to have a parent template for layout such that other pages may inherit
 
-// page.jsx is what will Render our Home page
+Contains Metadata and contains RootLayout HTML
 
 ** Run npm run dev to test web application**
+
+***page.jsx***
+//page.jsx is what will Render our Home page
+
+Build out Home page using section and use differemt elements such as span and p tags.  Also include a hidden option break tag for larger devices
+
+import Feed.jsx into page.jsx
+Call Feed in section of return function
+
+*** Create Feed.jsx for feed components ***
+
+*** Create Form.jsx for form components ***
+
+*** Create Navbar.jsx for Navigation bar components ***
+Uses next.js for
+	Link
+	Image
+Use useState, useEffect from react
+	Because we are using hooks(client side), call Use client;
+Use 'next-auth/react'
+	signIn, signOut, useSession, getProviders
+use nav with tailwind css
+
+run npm install next-auth to install next-auth packages
+
+*** Create Profile.jsx for Navigation bar components ***
+
+*** Create PromptCard.jsx for Prompt Card components ***
+
+*** Create Provider.jsx for Provider components ***
