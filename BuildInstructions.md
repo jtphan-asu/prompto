@@ -73,6 +73,12 @@ use nav with tailwind css
 
 run npm install next-auth to install next-auth packages
 
+//Work on Navbar.jsx 
+
+Include Client side Links to other directories if user is signed in (signIn,create-prompt, profile).
+
+Include fetching provider functionality
+
 *** Create Profile.jsx for Navigation bar components ***
 
 *** Create PromptCard.jsx for Prompt Card components ***
