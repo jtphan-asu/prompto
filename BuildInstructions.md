@@ -84,3 +84,19 @@ Include fetching provider functionality
 *** Create PromptCard.jsx for Prompt Card components ***
 
 *** Create Provider.jsx for Provider components ***
+
+
+*** SETUP DATABASE: Create database.js ***
+
+connect to mongoose
+
+Set up async method to connect to database
+
+Execute inside Try block
+
+//Fetch mongo db URI from process.env variable
+await mongoose.connect(process.env.MONGODB_URI, {
+            dbName: "share_prompt",
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        })
