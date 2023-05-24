@@ -61,6 +61,9 @@ Call Feed in section of return function
 
 *** Create Form.jsx for form components ***
 
+Create Form which includes textArea with post.prompt data and input field with value=post.tag
+Cancel button exits form and returns to home page
+
 *** Create Navbar.jsx for Navigation bar components ***
 Uses next.js for
 	Link
@@ -100,3 +103,13 @@ await mongoose.connect(process.env.MONGODB_URI, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         })
+
+set up MongoDB atlas and create env variable
+
+*****Create Post page*****
+
+app/create-prompt
+
+Create a page that returns a form
+	form has post and createPrompt function
+

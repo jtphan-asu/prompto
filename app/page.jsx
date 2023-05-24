@@ -1,5 +1,18 @@
 
 import Feed from "@components/Feed";
+import Form from "@components/Form";
+import Profile from "@components/Profile";
+
+const CreatePrompt = () => {
+    const [submitting, setSubmitting] = useState(false);
+    const [post, setPost] = useState({
+        prompt: '',
+        tag: '',
+    });
+    const createPrompt = async (e) => {
+        
+    }
+}
 
 const Home = () => {
     return(
@@ -14,7 +27,7 @@ const Home = () => {
             </p>
             <br/>
             <Feed />
-
+            
 
         </section>
         
