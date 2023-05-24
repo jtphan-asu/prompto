@@ -61,6 +61,9 @@ Call Feed in section of return function
 
 *** Create Form.jsx for form components ***
 
+Create Form which includes textArea with post.prompt data and input field with value=post.tag
+Cancel button exits form and returns to home page
+
 *** Create Navbar.jsx for Navigation bar components ***
 Uses next.js for
 	Link
@@ -73,8 +76,40 @@ use nav with tailwind css
 
 run npm install next-auth to install next-auth packages
 
+//Work on Navbar.jsx 
+
+Include Client side Links to other directories if user is signed in (signIn,create-prompt, profile).
+
+Include fetching provider functionality
+
 *** Create Profile.jsx for Navigation bar components ***
 
 *** Create PromptCard.jsx for Prompt Card components ***
 
 *** Create Provider.jsx for Provider components ***
+
+
+*** SETUP DATABASE: Create database.js ***
+
+connect to mongoose
+
+Set up async method to connect to database
+
+Execute inside Try block
+
+//Fetch mongo db URI from process.env variable
+await mongoose.connect(process.env.MONGODB_URI, {
+            dbName: "share_prompt",
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        })
+
+set up MongoDB atlas and create env variable
+
+*****Create Post page*****
+
+app/create-prompt
+
+Create a page that returns a form
+	form has post and createPrompt function
+
