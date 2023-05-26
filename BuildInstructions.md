@@ -82,6 +82,8 @@ Include Client side Links to other directories if user is signed in (signIn,crea
 
 Include fetching provider functionality
 
+Work on mobile layout for navbar. Fetch providers and map into buttons.
+
 *** Create Profile.jsx for Navigation bar components ***
 
 *** Create PromptCard.jsx for Prompt Card components ***
