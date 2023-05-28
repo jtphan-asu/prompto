@@ -119,3 +119,8 @@ app/create-prompt
 Create a page that returns a form
 	form has post and createPrompt function
 
+***** Inside app/api/[...nextauth]/route.js *****
+
+Create Google Cloud API with OAuth 2.0 Web Application
+
+Create clientID and clientSecret in .env file
