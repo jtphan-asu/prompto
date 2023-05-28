@@ -48,7 +48,7 @@ This file is to have a parent template for layout such that other pages may inhe
 Contains Metadata and contains RootLayout HTML
 
 ** Run npm run dev to test web application**
-
+Wrap 
 ***page.jsx***
 //page.jsx is what will Render our Home page
 
@@ -93,7 +93,7 @@ Finish Mobile Navigation using toggleDropdown
 *** Create PromptCard.jsx for Prompt Card components ***
 
 *** Create Provider.jsx for Provider components ***
-
+import SessionProvider from 'next-auth/react and return a SessionProvider using session from browser capabilities (place "use client" at top of file)
 
 *** SETUP DATABASE: Create database.js ***
 
