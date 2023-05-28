@@ -84,6 +84,10 @@ Include fetching provider functionality
 
 Work on mobile layout for navbar. Fetch providers and map into buttons.
 
+setToggleDropdown to true by using previous state and not altering current version of state to avoid unexpected issues
+
+Finish Mobile Navigation using toggleDropdown
+
 *** Create Profile.jsx for Navigation bar components ***
 
 *** Create PromptCard.jsx for Prompt Card components ***
