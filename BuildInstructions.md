@@ -88,6 +88,10 @@ setToggleDropdown to true by using previous state and not altering current versi
 
 Finish Mobile Navigation using toggleDropdown
 
+Add session and implement user image from session
+
+Finish signIn and signOut from OAuth
+
 *** Create Profile.jsx for Navigation bar components ***
 
 *** Create PromptCard.jsx for Prompt Card components ***
@@ -118,4 +122,24 @@ app/create-prompt
 
 Create a page that returns a form
 	form has post and createPrompt function
+
+***** Inside app/api/[...nextauth]/route.js *****
+
+Create Google Cloud API with OAuth 2.0 Web Application
+
+Create clientID and clientSecret in .env file
+
+Set up next.js authentication in route.js
+
+***** Create user.js for database model*****
+
+User schema for database
+
+Change .env to include Nextauth url and secret
+
+run command openssl rand -base64 32 to generate secret
+
+*****next.config.js*****
+
+add config for experimental and images, webpack
 
