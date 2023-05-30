@@ -123,6 +123,17 @@ app/create-prompt
 Create a page that returns a form
 	form has post and createPrompt function
 
+Create API call for createPrompt function as POST request.
+
+*****api/prompt/new/route.js*****
+Create API route using Next.js
+	Async function for POST request
+	await req.json();
+	Create new prompt
+	Connect to DB
+	Save to DB
+	Return new response
+
 ***** Inside app/api/[...nextauth]/route.js *****
 
 Create Google Cloud API with OAuth 2.0 Web Application
