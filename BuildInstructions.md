@@ -58,6 +58,9 @@ import Feed.jsx into page.jsx
 Call Feed in section of return function
 
 *** Create Feed.jsx for feed components ***
+Fetch data from posts and display on PromptCard
+
+Create GET request api route using Next.js to fetch all prompts
 
 *** Create Form.jsx for form components ***
 
