@@ -96,8 +96,16 @@ Add session and implement user image from session
 Finish signIn and signOut from OAuth
 
 *** Create Profile.jsx for Navigation bar components ***
+	Create Profile page.jsx using rafce command
+
 
 *** Create PromptCard.jsx for Prompt Card components ***
+
+Create function to handle the copy to clipboard operation
+
+Return promptCard which has user logo. username. email. and post information.
+
+Also include icons to copy prompt on promptCard
 
 *** Create Provider.jsx for Provider components ***
 import SessionProvider from 'next-auth/react and return a SessionProvider using session from browser capabilities (place "use client" at top of file)
