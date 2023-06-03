@@ -1,4 +1,10 @@
-import React from 'react'
+"use client";
+
+import { useState, useEffect } from 'react';
+import { useSession } from 'next-auth/react';
+//import { useRouter } from 'next-auth/navigation';
+
+//import Profile from '@components/profile';
 
 const Profile = () => {
   return (
