@@ -165,3 +165,13 @@ run command openssl rand -base64 32 to generate secret
 
 add config for experimental and images, webpack
 
+***profile/page.jsx
+Use session user id data to fetch and display posts to the profile page
+
+fetch data from API endpoint in 
+
+//fetch from api endpoint
+      const response = await fetch(`/api/users/$
+      {session?.user.id}/posts`);
+
+Link to components/Profile.jsx
