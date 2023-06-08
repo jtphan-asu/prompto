@@ -2,7 +2,7 @@ import { connectToDB } from "@utils/database";
 import Prompt from '@models/prompt';
 
 
-//API Route in Next.js
+//API Route in Next.js to GET prompts
 export const GET = async (request, { params }) => {
     
 
@@ -10,16 +10,11 @@ export const GET = async (request, { params }) => {
         //Connect to DB everytime because this is a lambda function
         await connectToDB();
         
-        const prompts = await Prompt.find({ 
-            creator: params.id }).populate("creator")
-        
-            //Save to database
-        await newPrompt.save();
+        const prompts = await Prompt.find({ creator: params.id }).populate("creator")
+    
 
         //Return new response
-        return new Response(JSON.stringify(prompts), {
-            status: 200
-        })
+        return new Response(JSON.stringify(prompts), {status: 200})
     } catch(error){
         return new Response("Failed to fetch prompts created by user", { status: 500});
     }

@@ -8,6 +8,8 @@ import Profile from '@components/Profile';
 
 const MyProfile = () => {
 
+  const router = useRouter();
+
   //This react hook allows us to access user session data
   const { data: session } = useSession();
 
@@ -28,14 +30,14 @@ const MyProfile = () => {
     const fetchPosts = async () => {
 
       //fetch from api endpoint
-      const response = await fetch(`/api/users/$
-      {session?.user.id}/posts`);
+      const response = await fetch(`/api/users/${session?.user.id}/posts`);
       const data = await response.json();
 
       setMyPosts(data);
-    }
+    };
+
     if(session?.user.id) fetchPosts();
-  }, []);
+  }, [session?.user.id]);
 
 
   return (
@@ -49,7 +51,7 @@ const MyProfile = () => {
     />
     
     
-  )
-}
+  );
+};
 
 export default MyProfile;
