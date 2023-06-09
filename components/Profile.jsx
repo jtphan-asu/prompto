@@ -15,12 +15,10 @@ const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
           post={post}
 
           //If handleEdit exists, then handle post
-          handleEdit={() => handleEdit && handleEdit
-          (post)}
+          handleEdit={() => handleEdit && handleEdit(post)}
 
           //If handleDelete exists, then handle post
-          handleDelete={() => handleDelete && handleDelete
-            (post)}
+          handleDelete={() => handleDelete && handleDelete(post)}
         />
        
       ))}

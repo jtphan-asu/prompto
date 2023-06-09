@@ -15,14 +15,6 @@ const MyProfile = () => {
 
   //useState is for stateful data
   const [myPosts, setMyPosts] = useState([]);
-
-  const handleEdit = () => {
-
-  }
-
-  const handleDelete = async () => {
-
-  }
   
   //Asyncronous function to fetch posts from user id specific session
   //Await functions in javascript waits to fulfill a Promise
@@ -39,6 +31,14 @@ const MyProfile = () => {
     if(session?.user.id) fetchPosts();
   }, [session?.user.id]);
 
+
+  const handleEdit = () => {
+
+  }
+
+  const handleDelete = async () => {
+
+  }
 
   return (
    
