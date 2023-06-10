@@ -32,12 +32,15 @@ const MyProfile = () => {
   }, [session?.user.id]);
 
 
-  const handleEdit = () => {
-
+  const handleEdit = (post) => {
+    //Call API endpoint in app/api/prompt/[id]/route.js
+    router.push(`/update-prompt?id=${post._id}`)
+  
   }
 
-  const handleDelete = async () => {
-
+  const handleDelete = async (post) => {
+    //Call API endpoint in app/api/prompt/[id]/route.js
+    router.push(`/delete-prompt?id=${post._id}`)
   }
 
   return (
