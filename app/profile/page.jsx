@@ -39,8 +39,24 @@ const MyProfile = () => {
   }
 
   const handleDelete = async (post) => {
-    //Call API endpoint in app/api/prompt/[id]/route.js
-    router.push(`/delete-prompt?id=${post._id}`)
+    
+    const hasConfirmed = confirm("Are you sure you want to delete this prompt?");
+
+    if(hasConfirmed){
+      //Call API endpoint in app/api/prompt/[id]/route.js
+      try{
+        await fetch(`/api/prompt/&{post._id.toString()}`, {
+          method: 'DELETE'
+        });
+        
+        const filteredPosts = myPosts.filter((item) => item._id !== post._id);
+
+        setMyPosts(filteredPosts);
+      } catch(error){
+        console.log(error);
+      }
+
+    }
   }
 
   return (
