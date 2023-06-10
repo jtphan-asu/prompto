@@ -15,14 +15,6 @@ const MyProfile = () => {
 
   //useState is for stateful data
   const [myPosts, setMyPosts] = useState([]);
-
-  const handleEdit = () => {
-
-  }
-
-  const handleDelete = async () => {
-
-  }
   
   //Asyncronous function to fetch posts from user id specific session
   //Await functions in javascript waits to fulfill a Promise
@@ -39,6 +31,33 @@ const MyProfile = () => {
     if(session?.user.id) fetchPosts();
   }, [session?.user.id]);
 
+
+  const handleEdit = (post) => {
+    //Call API endpoint in app/api/prompt/[id]/route.js
+    router.push(`/update-prompt?id=${post._id}`);
+  
+  }
+
+  const handleDelete = async (post) => {
+    
+    const hasConfirmed = confirm("Are you sure you want to delete this prompt?");
+
+    if(hasConfirmed){
+      //Call API endpoint in app/api/prompt/[id]/route.js
+      try{
+        await fetch(`/api/prompt/&{post._id.toString()}`, {
+          method: 'DELETE'
+        });
+        
+        const filteredPosts = myPosts.filter((item) => item._id !== post._id);
+
+        setMyPosts(filteredPosts);
+      } catch(error){
+        console.log(error);
+      }
+
+    }
+  }
 
   return (
    
