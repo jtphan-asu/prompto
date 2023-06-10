@@ -25,7 +25,7 @@ export const PATCH = async(request, { params }) => {
 
     try{
         //First connect to Database
-        await connectToDb();
+        await connectToDB();
 
         //Find prompt by ID
         const existingPrompt = await Prompt.findById(params.id);

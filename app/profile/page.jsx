@@ -34,7 +34,7 @@ const MyProfile = () => {
 
   const handleEdit = (post) => {
     //Call API endpoint in app/api/prompt/[id]/route.js
-    router.push(`/update-prompt?id=${post._id}`)
+    router.push(`/update-prompt?id=${post._id}`);
   
   }
 
